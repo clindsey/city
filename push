@@ -1,0 +1,2 @@
+git commit -m "updated readme"
+git push -u origin master
