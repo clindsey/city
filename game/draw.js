@@ -1,5 +1,7 @@
 /*
 Dencity City Simulator (0.0)
+Filename:		draw.js
+Description:	Drawing Functions
 Copyright (C) 2011, Ben Green ( ben@latenightsketches.com )
 
 This program is free software: you can redistribute it and/or modify

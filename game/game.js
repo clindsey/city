@@ -1,5 +1,7 @@
 /*
 Dencity City Simulator (0.0)
+Filename:		game.js
+Description:	Main Object
 Copyright (C) 2011, Ben Green ( ben@latenightsketches.com )
 
 This program is free software: you can redistribute it and/or modify
@@ -31,9 +33,9 @@ var Dencity={
 					this.canvas=canvas;
 					this.context=this.canvas.getContext("2d");
 					this.map=map||this.terrain.generateMap(
-								this.settings.defaultMap.width,
-								this.settings.defaultMap.height,
-								this.settings.defaultMap.altitude);
+									this.settings.defaultMap.width,
+									this.settings.defaultMap.height,
+									this.settings.defaultMap.altitude);
 				},
 	viewport:	{x:0,y:0,z:30,ch:0.5,rot:0},
 	loadedImages:[]

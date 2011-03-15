@@ -18,12 +18,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 var Dencity={
 	settings:	{
 					defaultMap:{width:10,height:10,altitude:0},
-					view:{  grid:false,
-							debug:true,
-							minZ:10,
-							maxZ:100,
+					view:{  debug:true,
+							grid:false,
 							minCh:0.05,
-							maxCh:1
+							maxCh:1,
+							minZ:10,
+							maxZ:100
 							},
 					terrain:{minAlt:0,maxAlt:100}
 				},
@@ -31,9 +31,9 @@ var Dencity={
 					this.canvas=canvas;
 					this.context=this.canvas.getContext("2d");
 					this.map=map||this.terrain.generateMap(
-								this.settings.defaultMap.width,
-								this.settings.defaultMap.height,
-								this.settings.defaultMap.altitude);
+									this.settings.defaultMap.width,
+									this.settings.defaultMap.height,
+									this.settings.defaultMap.altitude);
 				},
 	viewport:	{x:0,y:0,z:30,ch:0.5,rot:0},
 	loadedImages:[]
