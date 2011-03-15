@@ -1,0 +1,14 @@
+Dencity.terrain={};
+
+Dencity.terrain.generateMap=function(width,height,altitude){
+	var output=[],
+		curRow;
+	for(var x=0;x<width;x++){
+		curRow=[];
+		for(var y=0;y<height;y++){
+			curRow.push({alt:[altitude,altitude,altitude,altitude],water:false});
+		}
+		output.push(curRow);
+	}
+	return output;
+};

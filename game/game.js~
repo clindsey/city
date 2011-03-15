@@ -1,0 +1,17 @@
+var Dencity={
+	settings:	{
+					defaultMap:{width:10,height:10,altitude:0}
+				},
+	init:		function(canvas,map){
+					this.canvas=canvas;
+					this.context=this.canvas.getContext("2d");
+					this.map=map||this.terrain.generateMap(
+								this.settings.defaultMap.width,
+								this.settings.defaultMap.height,
+								this.settings.defaultMap.altitude);
+				},
+	viewport:	{x:0,y:0,z:30,ch:0.5,rot:0},
+	loadedImages:[]
+}
+
+

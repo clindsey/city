@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Dencity</title>
+
+	<!--config-->
+
+	<!--libraries-->
+	<script src="http://localhost:5984/_utils/script/couch.js"></script>
+	<script src="lib/jquery-1.5.1.js"></script>
+	<script src="game/game.js"></script>
+	<script src="game/util.js"></script>
+	<script src="game/terra.js"></script>
+	<script src="game/draw.js"></script>
+	<script>
+		$(function(){
+			Dencity.init($("#game")[0]);
+		});
+	</script>
+</head>
+
+<body>
+	<canvas id="game" width="600" height="500"></canvas>
+</body>
+</html>

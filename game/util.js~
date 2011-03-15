@@ -1,0 +1,25 @@
+Dencity.util={}
+
+Dencity.util.tilePos=function(pos){ return [{x:0,y:0},{x:0,y:0},{x:0,y:0},{x:0,y:0}] };
+
+Dencity.util.loadImage=function(){};
+Dencity.util.getImage=function(){};
+
+Dencity.util.addToSel=function(sel,posA,posB){
+	var range={x:{start:(posA.x<posB.x ? posA.x : posB.x),
+			  end:(posA.x>posB.x ? posA.x : posB.x)},
+		   y:{start:(posA.y<posB.y ? posA.y : posB.y),
+			  end:(posA.y>posB.y ? posA.y : posB.y)}};
+			 
+	for(var x=range.x.start; x<range.x.end+1; x++)
+		for(var y=range.y.start; y<range.y.end+1; y++)
+			sel.push({x:x,y:y});
+			
+	return sel;
+};
+	
+Dencity.util.mapToSel=function(sel,func){
+	for(var i=0;i<sel.length;i++)
+		func.call(this,sel[i]);
+};
+
