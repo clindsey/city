@@ -1,6 +1,6 @@
 /*
 Dencity City Simulator (0.0)
-Copyright (C) 2011, Ben Green
+Copyright (C) 2011, Ben Green ( ben@latenightsketches.com )
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -29,7 +29,9 @@ Dencity.draw.drawAll=function(){
 Dencity.draw.drawTile=function(pos){
 	var cPos=Dencity.util.tilePos(pos);
 	if(Dencity.draw.tileInView(cPos)){
-	}
+		if(Dencity.draw.loadTileImage(pos)){
+		};
+	};
 };
 
 Dencity.draw.tileInView=function(cPos){
