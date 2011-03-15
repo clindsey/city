@@ -1,6 +1,6 @@
 /*
 Dencity City Simulator (0.0)
-Copyright (C) 2011, Ben Green
+Copyright (C) 2011, Ben Green ( ben@latenightsketches.com )
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -17,7 +17,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 var Dencity={
 	settings:	{
-					defaultMap:{width:10,height:10,altitude:0}
+					defaultMap:{width:10,height:10,altitude:0},
+					view:{  grid:false,
+							debug:true,
+							minZ:10,
+							maxZ:100,
+							minCh:0.05,
+							maxCh:1
+							},
+					terrain:{minAlt:0,maxAlt:100}
 				},
 	init:		function(canvas,map){
 					this.canvas=canvas;

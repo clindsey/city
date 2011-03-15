@@ -17,7 +17,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 var Dencity={
 	settings:	{
-					defaultMap:{width:10,height:10,altitude:0}
+					defaultMap:{width:10,height:10,altitude:0},
+					view:{  debug:true,
+							grid:false,
+							minCh:0.05,
+							maxCh:1,
+							minZ:10,
+							maxZ:100
+							},
+					terrain:{minAlt:0,maxAlt:100}
 				},
 	init:		function(canvas,map){
 					this.canvas=canvas;
